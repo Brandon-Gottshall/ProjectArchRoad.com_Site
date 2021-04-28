@@ -14,7 +14,7 @@ export default function Home () {
           Project Arch Road
         </h1>
         <h1 className={styles.subTitle}>
-          Summer 2020
+          Summer 2021
         </h1>
         <div className={styles.buttonFlexContainer}>
           <button>Privacy Policy</button>
