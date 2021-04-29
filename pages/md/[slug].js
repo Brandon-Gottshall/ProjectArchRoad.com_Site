@@ -6,7 +6,7 @@ import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import Link from 'next/link'
 import matter from 'gray-matter'
-import Layout from '../../components/Layout'
+import Layout from '../components/Layout'
 import { postFilePaths, POSTS_PATH } from '../../utils/mdxUtils'
 import style from '../../styles/MD.module.css'
 
