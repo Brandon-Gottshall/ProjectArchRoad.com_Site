@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 
 export default function Home () {
   const router = useRouter()
+  const navigateTo = (route) => router.push(route)
   return (
     <div className={styles.container}>
       <Head>
@@ -19,8 +20,8 @@ export default function Home () {
           Summer 2021
         </h1>
         <div className={styles.buttonFlexContainer}>
-          <button onClick={e => router.push('/md/privacy')}>Privacy Policy</button>
-          <button onClick={e => router.push('/md/terms')}>Terms of Service</button>
+          <button onClick={() => navigateTo('/md/privacy')}>Privacy Policy</button>
+          <button onClick={() => navigateTo('/md/terms')}>Terms of Service</button>
         </div>
       </main>
 
