@@ -1,7 +1,9 @@
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import styles from '../styles/Home.module.css'
 
 export default function Home () {
+  const router = useRouter()
   return (
     <div className={styles.container}>
       <Head>
@@ -17,8 +19,8 @@ export default function Home () {
           Summer 2021
         </h1>
         <div className={styles.buttonFlexContainer}>
-          <button>Privacy Policy</button>
-          <button>Terms of Service</button>
+          <button onClick={e => router.push('/md/privacy')}>Privacy Policy</button>
+          <button onClick={e => router.push('/md/terms')}>Terms of Service</button>
         </div>
       </main>
 
